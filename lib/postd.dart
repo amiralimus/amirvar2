@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:amirvar2/main.dart';
 
 var img = Center(
     child: ClipRRect(
@@ -18,19 +19,15 @@ class Postd extends StatelessWidget {
       ),
       home: Scaffold(
         backgroundColor: Colors.white38,
-        appBar:
-        AppBar(backgroundColor: Colors.black, title: const Text('amirvr')),
+        appBar: AppBar(
+            backgroundColor: Colors.white,
+            title: const Text('[amirvar asisten]')),
         body: SingleChildScrollView(
           child: Column(children: [
-            IconButton(
-                onPressed: () {
-                  img = Center(
-                      child: ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
-                          child: Image.network(
-                              'https://picsum.photos/250?image=9')));
-                },
-                icon: Icon(Icons.keyboard_arrow_left)),
+            Padding(
+              padding: EdgeInsets.all(1),
+              child: Iconst(),
+            ),
             img,
             const Divider(color: Colors.black),
             const Row(
@@ -96,4 +93,46 @@ class Postd extends StatelessWidget {
       ),
     );
   }
+}
+
+bool _isssaved = false;
+
+class Iconst extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Row(children: [
+      InkWell(
+        child: IconButton(
+          onPressed: () {
+            Navigator.pop(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const MyApp(),
+              ),
+            );
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
+      ),
+      Spacer(),
+      Icon(Icons.share),
+      IconButton(
+        onPressed: () {
+          setState(() {
+            _isssaved = !_isssaved;
+            if (_isssaved == true) {
+              ScaffoldMessenger.of(context)
+                  .showSnackBar(SnackBar(content: Text("saved")));
+            } else {
+              ScaffoldMessenger.of(context)
+                  .showSnackBar(SnackBar(content: Text("unsaved")));
+            }
+          });
+        },
+        icon: _isssaved ? Icon(Icons.save) : Icon(Icons.save_outlined),
+      ),
+    ]);
+  }
+
+  void setState(Null Function() param0) {}
 }

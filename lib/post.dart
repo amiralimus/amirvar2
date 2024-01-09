@@ -24,13 +24,21 @@ class _Mypoststate extends State<Mypost> {
             onPressed: () {
               setState(() {
                 _issaved = !_issaved;
+                if (_issaved == true) {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text("saved")));
+
+                } else {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text("unsaved")));
+                }
               });
             },
             icon: _issaved ? Icon(Icons.save) : Icon(Icons.save_outlined),
           ),
           const Expanded(
             child:
-                Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+            Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
               Text('عنوان اگهی',
                   style: TextStyle(
                     color: Colors.black87,
