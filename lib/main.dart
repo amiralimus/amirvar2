@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const MyHomePage(
-        title: '[amirvar asisten]',
+        title: 'جست جو[...........................]',
       ),
     );
   }
@@ -38,6 +38,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
+  get bottomNavigationBar => null;
+
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -47,286 +49,204 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white30,
-        appBar: AppBar(
-          backgroundColor: Colors.grey,
-          title: Text(widget.title),
-        ),
-        body: SingleChildScrollView(
-          child: Column(children: [
-            CategoryList(),
+      backgroundColor: Colors.white30,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(widget.title),
+      ),
+      body: SingleChildScrollView(
+        child: Column(children: [
           Divider(
-              color: Colors.black,
-            ),
-           InkWell(
-             child:Mypost(),
-             onTap: (){
-               Navigator.push(
-                 context,
-                 MaterialPageRoute(builder: (context)=>
-               const Postd(),
-                 ),
-               );
-             },
-           ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
+            color: Colors.black,
+          ),
+          CategoryList(),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
 
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            InkWell(
-              child:Mypost(),
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context)=>
-                  const Postd(),
-                  ),
-                );
-              },
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-          ]),
 
-        ));
+        ]),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: <Widget>[
+            Icon(Icons.account_circle),
+            Spacer(),
+            Icon(Icons.chat_bubble_sharp),
+            Spacer(),
+            Icon(Icons.add_circle_outlined),
+            Spacer(),
+            Icon(Icons.table_rows_rounded),
+            Spacer(),
+            Icon(Icons.devices),
+          ],
+        ),
+      ),
+    );
   }
 }
