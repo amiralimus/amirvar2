@@ -1,25 +1,7 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:amirvar2/main.dart';
-var ic= IconButton(
-  onPressed: () {
-    setState(() {
-      _isssaved = !_isssaved;
-      if (_isssaved == true) {
-        ScaffoldMessenger.of(context as BuildContext)
-            .showSnackBar(SnackBar(content: Text("saved")));
-      } else {
-        ScaffoldMessenger.of(context as BuildContext)
-            .showSnackBar(SnackBar(content: Text("unsaved")));
-      }
-    });
-  },
-  icon: _isssaved ? Icon(Icons.bookmark_outlined) : Icon(Icons.bookmark_border_rounded),
-);
 
-void setState(Null Function() param0) {
-}
+void setState(Null Function() param0) {}
 var img = Center(
     child: ClipRRect(
         borderRadius: BorderRadius.circular(20),
@@ -38,9 +20,7 @@ class Postd extends StatelessWidget {
       ),
       home: Scaffold(
         backgroundColor: Colors.white38,
-        appBar: AppBar(
-            backgroundColor: Colors.white,
-            title:Iconst()),
+        appBar: AppBar(backgroundColor: Colors.white, title: Iconst()),
         body: SingleChildScrollView(
           child: Column(children: [
             img,
@@ -131,7 +111,7 @@ class Iconst extends StatelessWidget {
       ),
       Spacer(),
       Icon(Icons.share),
-      ic,
+      Icon(Icons.bookmark_border)
     ]);
   }
 

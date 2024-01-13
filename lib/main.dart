@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const MyHomePage(
-        title: 'جست جو[...........................]',
+        title: 'جست جو[..........................]',
       ),
     );
   }
@@ -38,14 +38,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  get bottomNavigationBar => null;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,176 +52,133 @@ class _MyHomePageState extends State<MyHomePage> {
             color: Colors.black,
           ),
           CategoryList(),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
-          Divider(
-            color: Colors.black,
-          ),
-          InkWell(
-            child: Mypost(),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Postd(),
-                ),
-              );
-            },
-          ),
 
-
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
+          Divider(
+            color: Colors.black,
+          ),
+          InkWell(
+            child: Mypost(),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Postd(),
+                ),
+              );
+            },
+          ),
         ]),
       ),
       bottomNavigationBar: BottomAppBar(

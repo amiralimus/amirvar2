@@ -26,11 +26,10 @@ class _Mypoststate extends State<Mypost> {
                 _issaved = !_issaved;
                 if (_issaved == true) {
                   ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text("saved")));
-
+                      .showSnackBar(SnackBar(content: Text("save")));
                 } else {
                   ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text("unsaved")));
+                      .showSnackBar(SnackBar(content: Text("unsave")));
                 }
               });
             },
@@ -38,7 +37,7 @@ class _Mypoststate extends State<Mypost> {
           ),
           const Expanded(
             child:
-            Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+                Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
               Text('عنوان اگهی',
                   style: TextStyle(
                     color: Colors.black87,
