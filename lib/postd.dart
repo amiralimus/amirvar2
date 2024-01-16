@@ -85,6 +85,38 @@ class Postd extends StatelessWidget {
             ]),
           ]),
         ),
+        bottomNavigationBar: BottomAppBar(
+
+          child: Row(
+            children: <Widget>[
+             Text('شماره مخفی شده است پیام دهید'),
+              Spacer(),
+              Container(
+                width: 100,
+                height: 200,
+                decoration: BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  color: Colors.redAccent,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.red,
+                      blurRadius: 11,
+                    ),
+                  ],
+                ),
+                child: Center(
+                  child: Text(
+                    'چت',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16.0,
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }

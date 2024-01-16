@@ -1,5 +1,31 @@
 import 'package:flutter/material.dart';
 
+import 'catpg.dart';
+import 'main.dart';
+
+class Cad extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.teal,
+      body:  InkWell(
+        child: IconButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const MyApp(),
+              ),
+            );
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
+      ),
+    );
+  }
+}
+
+
 class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,16 +45,83 @@ class CategoryList extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          Category(),
-          Category(),
-          Category(),
-          Category(),
-          Category(),
-          Category(),
-          Category(),
-          Category(),
-          Category(),
-          Category(),
+          InkWell(
+            child: (Category()),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Cad(),
+                ),
+              );
+            },
+          ),
+          InkWell(
+            child: (Category()),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Caad(),
+                ),
+              );
+            },
+          ),
+          InkWell(
+            child: (Category()),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Caaad(),
+                ),
+              );
+            },
+          ),
+          InkWell(
+            child: (Category()),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Caaaad(),
+                ),
+              );
+            },
+          ),
+          InkWell(
+            child: (Category()),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Cad(),
+                ),
+              );
+            },
+          ),
+          InkWell(
+            child: (Category()),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Caad(),
+                ),
+              );
+            },
+          ),
+          InkWell(
+            child: (Category()),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Caaad(),
+                ),
+              );
+            },
+          ),
         ],
       ),
     );

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
 
 class Mypost extends StatefulWidget {
   @override
@@ -10,6 +12,10 @@ class Mypost extends StatefulWidget {
 class _Mypoststate extends State<Mypost> {
   bool _issaved = false;
 
+  Future<http.Response> createAlbum(String title) {
+    return http.post(
+        Uri.parse('https://random-d.uk/api/v2'));
+  }
   @override
   Widget build(BuildContext context) {
     return Padding(

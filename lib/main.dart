@@ -38,6 +38,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
+  get bottomNavigationBar => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -184,15 +186,22 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: <Widget>[
-            Icon(Icons.account_circle),
-            Spacer(),
-            Icon(Icons.chat_bubble_sharp),
-            Spacer(),
-            Icon(Icons.add_circle_outlined),
-            Spacer(),
-            Icon(Icons.table_rows_rounded),
-            Spacer(),
-            Icon(Icons.devices),
+
+
+
+
+                  Icon(Icons.account_circle),
+                  Spacer(),
+                  Icon(Icons.chat_bubble_sharp),
+                  Spacer(),
+                  Icon(Icons.add_circle_outlined),
+                  Spacer(),
+                  Icon(Icons.table_rows_rounded),
+                  Spacer(),
+                  Icon(Icons.devices),
+
+
+
           ],
         ),
       ),
